@@ -11,6 +11,16 @@ balanço detalhado, gerando corretamente as configurações de equilíbrio.
 Sua prescrição é dada por
 
 
+\begin{equation}
+\text{RHS} \rightarrow  
+\begin{cases} 
+\vert 1 \rangle \bigg[\frac{2\beta}{\sqrt{\alpha^2 + 4\beta^2}}\vert B\rangle &D_1\textrm{ clicks, probability $\frac{\alpha^2}{4}$}\\
+\quad - \frac{\alpha}{\sqrt{\alpha^2 + 4\beta^2}}\vert A \rangle\bigg], & \\
+\vert 2 \rangle\vert A \rangle, &D_2\text{ clicks, probability $\frac{\alpha^2}{4}$}\\
+\vert \text{scattered} \rangle\vert A \rangle, &\text{no clicks with probability $\frac{\alpha^2}{2}$}
+\end{cases}
+\end{equation}
+
 
 Wi→j =
 
@@ -21,7 +31,7 @@ e
 1 se ∆E < 0
 
 
-onde $Delta E = E(\sigma_j ) − E(\sigma_i)$. Na prática a taxa de transição $W_{i-j}$ 
+onde $Delta E = E(\sigma_j ) − E(\sigma_i)$. Na prática a taxa de transição $W_{i\rightarrowj}$ 
 é implementada comparando o fator $\exp{-\beta\Delta E}$ com números aleatórios 
 ${\cal R}$ $\in$ $[0, 1]$. Se $\Delta E < 0$ implementamos a troca da configuração 
 atual $\sigma_i$ por $\sigma_j$, caso contrário a nova configuração somente será 
