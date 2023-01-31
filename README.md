@@ -29,7 +29,7 @@ repetidas vezes alcançamos a situação de equilíbrio.
 
 ## General Results
 
-<img src="./img/magn.png" width="220" height="220" class="center" /> <img src="./img/susce.png" width="220" height="220" class="center" /> <img src="./img/bind.png" width="220" height="220" class="center" />
+<img src="./img/magn.png" width="250" height="250" class="center" /> <img src="./img/susce.png" width="250" height="250" class="center" /> <img src="./img/bind.png" width="250" height="250" class="center" />
 
 
 ## References
