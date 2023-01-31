@@ -1,2 +1,4 @@
-# CPH_majority_vote_model
+# Monte Carlos Simulation of Majority Voting Model
+
+
 Monte Carlo simulation of the Majority Vote Model 
