@@ -6,9 +6,9 @@ Monte Carlo simulation of the Majority Vote Model
 
 ## Metropolis Algorithm
 
-O algoritmo em fornece a taxa de transição ${\cal W}$ condizente com o requisito de
-balanço detalhado, gerando corretamente as configurações de equilíbrio.
-Sua prescrição é dada por
+O algoritmo em fornece a taxa de transição ${\cal W}$ condizente com o 
+requisito de balanço detalhado, gerando corretamente as configurações de 
+equilíbrio. Sua prescrição é dada por
 
 $$
 W_{i \rightarrow j} = 
@@ -20,7 +20,7 @@ $$
 
 onde $\Delta E = E(\sigma_j ) − E(\sigma_i)$. Na prática a taxa de transição $W_{i \rightarrow j}$ 
 é implementada comparando o fator $e^{-\beta\Delta E}$ com números aleatórios 
-${\cal R}$ $\in$ $[0, 1]$. Se $\Delta E < 0$ implementamos a troca da configuração 
+${\cal R}$ $\in$ $[0, 1]$. Se $\Delta E < 0$, implementamos a troca da configuração 
 atual $\sigma_i$ por $\sigma_j$, caso contrário a nova configuração somente será 
 aceita se $e^{−\beta \Delta E} > {\cal R}$. Se $e^{\beta \Delta E} < R$ então 
 $\sigma_j$ é rejeitada [1]. Observe que se $\Delta E < 0$ estamos gerando uma 
@@ -32,5 +32,5 @@ repetidas vezes alcançamos a situação de equilíbrio.
 
 ## References
 
-[1]ALLEN, M. P.; TILDESLEY, D. J. Computer Simulation of Liquids. Oxford science
+[1] ALLEN, M. P.; TILDESLEY, D. J. Computer Simulation of Liquids. Oxford science
 publications. Oxford University Press, USA, 1989.
