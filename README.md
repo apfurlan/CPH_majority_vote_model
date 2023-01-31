@@ -13,19 +13,19 @@ Sua prescrição é dada por
 $$
 W_{i \rightarrow j} = 
 \begin{cases} 
-\exp{-\beta\Delta} & if & $\Delta E > 0$ \\
-1 & se & $\Delta E > 0$
+e^{-\beta\Delta E} & if & \Delta E > 0 \\
+1 & se & \Delta E > 0
 \end{cases}
 $$
 
 onde $\Delta E = E(\sigma_j ) − E(\sigma_i)$. Na prática a taxa de transição $W_{i \rightarrow j}$ 
-é implementada comparando o fator $\exp{-\beta\Delta E}$ com números aleatórios 
+é implementada comparando o fator $e^{-\beta\Delta E}$ com números aleatórios 
 ${\cal R}$ $\in$ $[0, 1]$. Se $\Delta E < 0$ implementamos a troca da configuração 
 atual $\sigma_i$ por $\sigma_j$, caso contrário a nova configuração somente será 
-aceita se $\exp{−\beta \Delta E} > {\cal R}$. Se $\exp{\beta \Delta E} < R$ então 
-$\sigma_j$ é rejeitada [97]. Observe que se $\Delta E < 0$ estamos gerando uma 
+aceita se $e^{−\beta \Delta E} > {\cal R}$. Se $e^{\beta \Delta E} < R$ então 
+$\sigma_j$ é rejeitada [1]. Observe que se $\Delta E < 0$ estamos gerando uma 
 cadeia de Markov de estados com energia decrescente. Realizando-se o procedimento 
-repetidas vezes alcançamos a situação de equilíbrio[1].
+repetidas vezes alcançamos a situação de equilíbrio.
 
 ## General Results
 
