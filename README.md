@@ -6,21 +6,19 @@ Monte Carlo simulation of the Majority Vote Model
 
 ## Metropolis Algorithm
 
-O algoritmo em fornece a taxa de transição $W$ condizente com o requisito de
+O algoritmo em fornece a taxa de transição ${\cal W}$ condizente com o requisito de
 balanço detalhado, gerando corretamente as configurações de equilíbrio.
 Sua prescrição é dada por
 
-
-\begin{equation}
-\text{RHS} \rightarrow  
+$$
+{\cal W} \rightarrow  
 \begin{cases} 
 \vert 1 \rangle \bigg[\frac{2\beta}{\sqrt{\alpha^2 + 4\beta^2}}\vert B\rangle &D_1\textrm{ clicks, probability $\frac{\alpha^2}{4}$}\\
 \quad - \frac{\alpha}{\sqrt{\alpha^2 + 4\beta^2}}\vert A \rangle\bigg], & \\
 \vert 2 \rangle\vert A \rangle, &D_2\text{ clicks, probability $\frac{\alpha^2}{4}$}\\
 \vert \text{scattered} \rangle\vert A \rangle, &\text{no clicks with probability $\frac{\alpha^2}{2}$}
 \end{cases}
-\end{equation}
-
+$$
 
 Wi→j =
 
