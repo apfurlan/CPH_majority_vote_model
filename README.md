@@ -29,6 +29,9 @@ repetidas vezes alcançamos a situação de equilíbrio.
 
 ## General Results
 
+![](./img/magn.png)
+![](./img/susce.png)
+![](./img/bind.png)
 
 ## References
 
