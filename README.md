@@ -13,8 +13,8 @@ equilíbrio. Sua prescrição é dada por
 $$
 W_{i \rightarrow j} = 
 \begin{cases} 
-e^{-\beta\Delta E} & if & \Delta E > 0 \\
-1 & se & \Delta E > 0
+e^{-\beta\Delta E} & {\rm if} & \Delta E > 0 \\
+1 & {\rm if} & \Delta E > 0
 \end{cases}
 $$
 
