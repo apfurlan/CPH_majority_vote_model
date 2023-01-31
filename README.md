@@ -13,12 +13,12 @@ Sua prescrição é dada por
 $$
 W_{i \rightarrow j} = 
 \begin{cases} 
-\exp{-\beta\Delta} & if & $\Delta E > 0$
+\exp{-\beta\Delta} & if & $\Delta E > 0$ \\
 1 & se & $\Delta E > 0$
 \end{cases}
 $$
 
-onde $Delta E = E(\sigma_j ) − E(\sigma_i)$. Na prática a taxa de transição $W_{i \rightarrow j}$ 
+onde $\Delta E = E(\sigma_j ) − E(\sigma_i)$. Na prática a taxa de transição $W_{i \rightarrow j}$ 
 é implementada comparando o fator $\exp{-\beta\Delta E}$ com números aleatórios 
 ${\cal R}$ $\in$ $[0, 1]$. Se $\Delta E < 0$ implementamos a troca da configuração 
 atual $\sigma_i$ por $\sigma_j$, caso contrário a nova configuração somente será 
