@@ -29,9 +29,9 @@ repetidas vezes alcançamos a situação de equilíbrio.
 
 ## General Results
 
-<img src="./img/magn.png" width="400" height="200" class="center" />
-<img src="./img/susce.png" width="400" height="200" class="center" />
-<img src="./img/bind.png" width="400" height="200" class="center" />
+<img src="./img/magn.png" width="200" height="200" class="center" />
+<img src="./img/susce.png" width="200" height="200" class="center" />
+<img src="./img/bind.png" width="200" height="200" class="center" />
 
 
 ## References
