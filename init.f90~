@@ -1,0 +1,44 @@
+SUBROUTINE INIT(L,s,Ndim,Nstate,inist)
+
+  IMPLICIT NONE
+
+  INTEGER::i,seed,ri,rj,rk,state
+  INTEGER,INTENT(IN)::L,Ndim,Nstate
+  INTEGER,DIMENSION(L,L,L),INTENT(INOUT)::s
+
+  CHARACTER(len=4),INTENT(IN)::inist
+
+  DOUBLE PRECISION,EXTERNAL::RAN2
+
+!  INTEGER::ri,rj,rk,oldsig,oldstat,kk,seed,st,NMeOH,i
+!  INTEGER,INTENT(IN)::l,Nstate,Ncoord
+!  INTEGER,DIMENSION(l,l,l),INTENT(INOUT)::sigma,stat
+!  INTEGER,DIMENSION(Nstate,Ncoord),INTENT(IN)::tau
+!  INTEGER,DIMENSION(l,l,l,Ncoord),INTENT(IN)::nni,nnj,nnk
+
+!  DOUBLE PRECISION,EXTERNAL::ran2
+  seed=908988987
+
+  IF(inist.EQ.'full')THEN
+
+     s(:,:,:)=1
+
+  ELSE IF(inist.EQ.'empt')THEN
+
+     s(:,:,:)=0
+
+  ELSE IF(inist.EQ.'rand')THEN
+
+     DO i=1,L**Ndim
+
+        ri=INT(l*RAN2(seed))+1
+        rj=INT(l*RAN2(seed))+1
+        rk=INT(l*RAN2(seed))+1
+
+!        state=INT(RAN2(seed)*(Nstate))+1
+        state=INT(RAN2(seed)*(12))+1
+        s(ri,rj,rk)=state
+
+     END DO
+  END IF
+END SUBROUTINE INIT
