@@ -6,7 +6,7 @@ Monte Carlo simulation of the Majority Vote Model
 
 The MV model is defined in an arbitrary lattice topology,
 in which each node $i$ of degree $k_i$ is attached to a spin
-variable, $\sigma_i$, that can take the values $sigma_i = \pm 1$. 
+variable, $\sigma_i$, that can take the values $\sigma_i = \pm 1$. 
 In the original case, with probability $1-f$ each node $i$ tends 
 to align itself with its local neighborhood majority, and with 
 complementary probability $$ , the majority rule is not followed. 
