@@ -9,7 +9,7 @@ in which each node $i$ of degree $k_i$ is attached to a spin
 variable, $\sigma_i$, that can take the values $\sigma_i = \pm 1$. 
 In the original case, with probability $1-f$ each node $i$ tends 
 to align itself with its local neighborhood majority, and with 
-complementary probability $$ , the majority rule is not followed. 
+complementary probability $f$ , the majority rule is not followed. 
 (Text taken from the reference [1]).
 
 ## General Results
