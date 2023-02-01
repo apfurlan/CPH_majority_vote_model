@@ -21,6 +21,3 @@ complementary probability $f$ , the majority rule is not followed.
 
 [1] Pedro E. Harunari, M. M. de Oliveira, and C. E. Fiore
 Phys. Rev. E **96**, 042305.
-
-[2] ALLEN, M. P.; TILDESLEY, D. J. Computer Simulation of Liquids. Oxford science
-publications. Oxford University Press, USA, 1989.
