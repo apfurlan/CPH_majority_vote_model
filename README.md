@@ -1,38 +1,26 @@
-# Monte Carlo Simulation of Majority Voting Model
+# Monte Carlo Simulation of Majority Vote Model
 
 Monte Carlo simulation of the Majority Vote Model 
 
-## Majority Voting Model
+## Majority Vote Model
 
-## Metropolis Algorithm
-
-O algoritmo em fornece a taxa de transição ${\cal W}$ condizente com o 
-requisito de balanço detalhado, gerando corretamente as configurações de 
-equilíbrio. Sua prescrição é dada por
-
-$$
-W_{i \rightarrow j} = 
-\begin{cases} 
-e^{-\beta\Delta E} & {\rm if} & \Delta E > 0 \\
-1 & {\rm if} & \Delta E > 0
-\end{cases}
-$$
-
-onde $\Delta E = E(\sigma_j ) − E(\sigma_i)$. Na prática a taxa de transição $W_{i \rightarrow j}$ 
-é implementada comparando o fator $e^{-\beta\Delta E}$ com números aleatórios 
-${\cal R}$ $\in$ $[0, 1]$. Se $\Delta E < 0$, implementamos a troca da configuração 
-atual $\sigma_i$ por $\sigma_j$, caso contrário a nova configuração somente será 
-aceita se $e^{−\beta \Delta E} > {\cal R}$. Se $e^{\beta \Delta E} < R$ então 
-$\sigma_j$ é rejeitada [1]. Observe que se $\Delta E < 0$ estamos gerando uma 
-cadeia de Markov de estados com energia decrescente. Realizando-se o procedimento 
-repetidas vezes alcançamos a situação de equilíbrio.
+The MV model is defined in an arbitrary lattice topology,
+in which each node $i$ of degree $k_i$ is attached to a spin
+variable, $\sigma_i$, that can take the values $sigma_i = \pm 1$. 
+In the original case, with probability $1-f$ each node $i$ tends 
+to align itself with its local neighborhood majority, and with 
+complementary probability $$ , the majority rule is not followed. 
+(Text taken from the reference [1]).
 
 ## General Results
 
-<img src="./img/magn.png" width="250" height="250" class="center" /> <img src="./img/susce.png" width="250" height="250" class="center" /> <img src="./img/bind.png" width="250" height="250" class="center" />
+<img src="./img/magnet.png" width="250" height="250" class="center" /> <img src="./img/suscet.png" width="250" height="250" class="center" /> <img src="./img/binder.png" width="250" height="250" class="center" />
 
 
 ## References
 
-[1] ALLEN, M. P.; TILDESLEY, D. J. Computer Simulation of Liquids. Oxford science
+[1] Pedro E. Harunari, M. M. de Oliveira, and C. E. Fiore
+Phys. Rev. E **96**, 042305.
+
+[2] ALLEN, M. P.; TILDESLEY, D. J. Computer Simulation of Liquids. Oxford science
 publications. Oxford University Press, USA, 1989.
